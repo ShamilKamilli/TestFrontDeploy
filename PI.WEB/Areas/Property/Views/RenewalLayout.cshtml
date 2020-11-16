@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow padding-3">
+            <div class="container backgroud-color-white">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <img class="img-fluid" src="~/img/PASHA Logo Header.svg" />
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="container background-color-gray paddding-5">
+        <div class="row">
+            @RenderBody()
+        </div>
+    </div>
+
+    <div class="col-12 padding-10-5 footer-border">
+        <div class="div-7000-style">
+            <img class="w-100" src="~/img/7000 logo_svg.svg" />
+        </div>
+        <div class="margin-top-10 w-100">
+            <img class="w-40" src="~/img/Logo Footer.svg" />
+        </div>
+        <div class="margin-bottom-2">
+            <p class="footer-info-style">
+                2020 © PASHA Insurance renewal <br />
+                Platform ver. 1.0
+            </p>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+
+    <script>
+        $(document).ready(function ()
+        {
+            $(".payment-page div").click(function ()
+            {
+                $(".payment-page div").removeClass("selected-card");
+                $(this).addClass("selected-card");
+            })
+        })
+
+    </script>
+</body>
+</html>

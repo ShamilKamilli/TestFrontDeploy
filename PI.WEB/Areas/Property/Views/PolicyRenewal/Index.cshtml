@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Property/Views/RenewalLayout.cshtml";
+}
+
+<div class="col-12">
+    <h1 class="h1-style">
+        Hörmətli Sığortalı,
+    </h1>
+    <p class="p-info-style">
+        Daşınmaz əmlakınızın icbari növ üzrə sığortanızı rəsmiləşdirmək üçün aşağıdakı məlumatları yoxlayın.
+    </p>
+</div>
+<div class="col-12">
+    <form>
+        <div class="form-group margin-top-20">
+            <label for="name" class="input-label">Ad</label>
+            <input type="text" class="form-control background-color-input" id="name" aria-describedby="emailHelp" placeholder="">
+        </div>
+
+        <div class="form-group margin-top-20">
+            <label class="input-label" for="lastName">Soyad</label>
+            <input type="text" class="form-control background-color-input" id="lastName" placeholder="">
+        </div>
+
+        <div class="form-group margin-top-20">
+            <label class="input-label" for="fatherName">Ata adı</label>
+            <input type="text" class="form-control background-color-input" id="fatherName" placeholder="">
+        </div>
+
+        <div class="form-group margin-top-20">
+            <label class="input-label" for="homeAddress">Ünvan</label>
+            <textarea class="form-control background-color-input" id="homeAddress" rows="3"></textarea>
+        </div>
+
+        <div class="form-group margin-top-20">
+            <label class="input-label" for="updateDate">Yeniləmə tarixi</label>
+            <input type="date" class="form-control background-color-input" id="updateDate" placeholder="">
+            <small id="emailHelp" class="form-text text-muted">*Sığorta müddəti 1 il (365 gün)</small>
+        </div>
+    </form>
+</div>
+
+<div class="col-12 margin-top-20">
+    <div class="row">
+        <div class="col-3 padding-0">
+            <a href="/property/policyrenewal/callorder">
+                <img class="img-fluid" src="~/img/plus.PNG" />
+            </a>
+        </div>
+        <div class="col-9">
+            <p class="p-info-style">
+                Əgər məlumatlar <b>düzgün deyilsə</b> mobil nömrənizi daxil edin.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="col-12 margin-top-20">
+    <div class="row">
+        <div class="col-3">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="round"></span>
+            </label>  
+        </div>
+        <div class="col-9">
+            <p class="p-info-style">
+                Məlumatların düzgün olduğunu təsdiq edirəm.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="col-12 margin-top-20">
+    <button class="button-next btn">İrəli</button>
+</div>
